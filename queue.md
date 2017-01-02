@@ -1,5 +1,18 @@
 # Queue
 
+Time Complexity:
+
+- enqueue: O(1)
+    
+- dequeue: O(1)
+    
+- peek: O(1)
+    
+- is_empty: O(1)
+    
+- size O(1)
+
+
 ```python
 class Queue():
     def __init__(self):
@@ -23,7 +36,9 @@ class Queue():
             return True
         else:
             return False
-
+            
+    # returns the size of the queue
     def size(self):
         return len(self.items)
 ```   
+
