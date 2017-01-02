@@ -1,3 +1,7 @@
+# Binary Tree Traversal
+
+In-Order, Post-Order, and Pre-Order Traversal
+
 ```python
 class Node():
     def __init__(self, val, left=None, right=None):
@@ -8,8 +12,7 @@ class Node():
 
 class BinaryTreeTraversal():
     def visit(self, node):
-        sys.stdout.write(str(node.val))
-        sys.stdout.write(' ')
+        print node.val
 
     def in_order(self, node):
         if node is not None:
