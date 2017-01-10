@@ -10,7 +10,7 @@ Time Complexity:
 
 - post_order: O(n)
 
-Running time is n where n is the number of elements in the tree.
+Running time is O(n) where n is the number of elements in the tree because it traverses the entire tree.
 
 
 ```python
