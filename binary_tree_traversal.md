@@ -2,6 +2,17 @@
 
 In-Order, Post-Order, and Pre-Order Traversal
 
+Time Complexity:
+
+- in_order: O(n)
+
+- pre_order: O(n)
+
+- post_order: O(n)
+
+Running time is n where n is the number of elements in the tree.
+
+
 ```python
 class Node():
     def __init__(self, val, left=None, right=None):
