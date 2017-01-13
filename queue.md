@@ -13,7 +13,7 @@
 - size O(1)
 
 
-### Implementation
+### Implementation:
 ```python
 class Queue():
     def __init__(self):
