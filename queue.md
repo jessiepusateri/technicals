@@ -1,6 +1,6 @@
 # Queue
 
-Time Complexity:
+### Time Complexity:
 
 - enqueue: O(1)
     
@@ -13,6 +13,7 @@ Time Complexity:
 - size O(1)
 
 
+### Implementation
 ```python
 class Queue():
     def __init__(self):
