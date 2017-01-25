@@ -5,11 +5,6 @@ Three things to keep in mind:
 - How long it takes to determine whether a given edge is in a graph
 - How long it takes to find the neighbors of a given vertex
 
-<p align="center">
-          <img src="https://s3.amazonaws.com/ka-cs-algorithms/social_network_num.png">
-</p>
-
-
 ## Objects and Pointers
 Storing nodes as objects with pointers to one another.
 
@@ -91,7 +86,3 @@ graph = [ [1, 6, 8],
           [0, 3, 7],
           [1, 4, 7] ]
 ```
-
-
-
-(source: https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
