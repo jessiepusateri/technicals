@@ -46,9 +46,11 @@ graph = [ [0, 1, 0, 0, 0, 0, 1, 0, 1, 0],
 
 ## Adjacency Lists
 
-- Space:
-- Edge Lookup:
-- Neighbor Lookup:
+Combines adjacency matrices with edge lists. For each vertex i, store an array of the vertices adjacent to it. Typically, there is an array of |V| adjacency lists, one adjacency list per vertex.
+
+- Space: undirected: 2|E| (each edge appears twice), directed: |E|, one element per directed edge
+- Edge Lookup: O(d) where d is the degree of the vertex. Range: 0 - |V| - 1
+- Neighbor Lookup: constant time (index into an array)
 
 ```python
 graph = [ [1, 6, 8],
