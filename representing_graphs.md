@@ -1,7 +1,13 @@
 # Representing Graphs
 
+Three things to keep in mind:
+- Memory (space) used
+- How long it takes to determine whether a given edge is in a graph
+- How long it takes to find the neighbors of a given vertex
 
-![Example Pic](https://s3.amazonaws.com/ka-cs-algorithms/social_network_num.png)
+<p align="center">
+          <img src="https://s3.amazonaws.com/ka-cs-algorithms/social_network_num.png">
+</p>
 
 ## Edge Lists
 
