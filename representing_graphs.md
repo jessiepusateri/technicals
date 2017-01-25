@@ -9,6 +9,20 @@ Three things to keep in mind:
           <img src="https://s3.amazonaws.com/ka-cs-algorithms/social_network_num.png">
 </p>
 
+
+### Objects and Pointers
+Storing nodes as objects with pointers to one another.
+
+- Space: O(E + V) because there is an object for each edge and each vertex.
+- Edge Lookup:
+- Neighbor Lookup: 
+
+```python
+a = Vertex(1);
+b = Vertex(2);
+edge = Edge(a, b, 30); // init an edge between ab and be with weight 30
+```
+
 ## Edge Lists
 Array of the |E| edges.
 
@@ -22,6 +36,8 @@ graph = [ [0,1], [0,6], [0,8], [1,4], [1,6], [1,9], [2,4], [2,6], [3,4], [3,5],
 ```
 
 ## Adjacency Matrices
+Advantage: Able to look up existence of an edge quickly. (constant time)
+Disadvantage: Slow to add or remove vertices, because matrix must be resized/copied.
 
 A |V| x |V| matrix of Os and 1s, where the entry in row i and column j is 1 if and only if the edge (i, j) is in the graph.
 
@@ -48,6 +64,9 @@ graph = [ [0, 1, 0, 0, 0, 0, 1, 0, 1, 0],
 ```
 
 ## Adjacency Lists
+Advantage: Adjacency lists are generally preferred because they efficiently represent sparse graphs.
+
+Disadvantage: Slow to remove vertices and edges, because it needs to find all vertices or edges.
 
 Combines adjacency matrices with edge lists. For each vertex i, store an array of the vertices adjacent to it. Typically, there is an array of |V| adjacency lists, one adjacency list per vertex.
 
@@ -67,5 +86,7 @@ graph = [ [1, 6, 8],
           [0, 3, 7],
           [1, 4, 7] ]
 ```
+
+
 
 (source: https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
