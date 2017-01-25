@@ -27,9 +27,12 @@ A |V| x |V| matrix of Os and 1s, where the entry in row i and column j is 1 if a
 
 Tip: Replace 1s with the weights and the 0s with null if you want to represent a weighted graph.
 
-- Space:
-- Edge Lookup:
-- Neighbor Lookup:
+- Space: O(V^2)
+- Edge Lookup: constant time (looking up corresponding entry in matrix)
+- Neighbor Lookup: look at all |V| entries in vertex row
+
+Note: Undirected graph: matrix is symmetric
+      Directed graph: matrix need to be symmetric
 
 ```python
 graph = [ [0, 1, 0, 0, 0, 0, 1, 0, 1, 0],
@@ -64,3 +67,5 @@ graph = [ [1, 6, 8],
           [0, 3, 7],
           [1, 4, 7] ]
 ```
+
+(source: https://www.khanacademy.org/computing/computer-science/algorithms/graph-representation/a/representing-graphs)
