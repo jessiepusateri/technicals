@@ -1,4 +1,6 @@
-# Common Built-In Python Features
+# Cool Python Things
+
+## Built-In Functions
 
 ### filter(function, iterable)
   Construct a list from these elemts of iterable for which function returns true.
@@ -41,8 +43,9 @@
   =>
   ```
 
+## Tricks
 
-## Trick: Assigning whichever variable is not null.
+### Trick: Assigning whichever variable is not null.
   When one of the variables is null and you want to assign the one that is not null, you can use "or".
   ```python
   > a = 1
