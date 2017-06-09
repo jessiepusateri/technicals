@@ -2,9 +2,15 @@
 
 ### Time Complexity:
 
-- insert
+- insert: O(log n)*
 
-- delete_min
+*This is worst-case since we need at most one swap on each level of a heap on the path from the inserted node to the root.
+
+- delete_min: O(log n)**
+
+**Similar to insert, this is worst-case.
+
+- build_heap: O(n)
 
 ### Implementation:
 ```python
