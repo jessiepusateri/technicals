@@ -26,10 +26,11 @@ class Stack():
 
     # removes and returns the item from the stop of the stack
     def pop(self):
-        self.items.pop(value)
+        return self.items.pop(value)
         
     # returns the item at the top of the stack, without removing it
     def peek(self):
+        return self.items[len(self.items) - 1]
 
     # returns true if the stack is empty, False otherwise
     def is_empty(self):
