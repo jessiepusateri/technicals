@@ -61,7 +61,5 @@ class MinHeap():
         self.heap_list.pop()
         self.perc_down(1)
         return ret_val
-    
-   
 ```
 
