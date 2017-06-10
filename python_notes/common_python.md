@@ -34,6 +34,9 @@
   >"".join(['h', 'i']
   => "hi"
   ```
+  
+### enumerate(iterator/sequence)
+  Returns an iterator of thing...(0, thing[0]), (1, thing[1]), (2, thing[2])
 
 ### xrange(start, stop)
   This function is very similar to range() but returns an xrange object instead of a list.
