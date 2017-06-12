@@ -58,7 +58,22 @@
   => 1
   ```
 
+## Behavior
 
+### Division is Floor Division
+
+```python
+>8/7
+>>>1
+
+```
+floor(8.0/7.0) == floor(1.14) == 1
+
+```python
+>8/-7
+>>>-2
+```
+floor(8.0/7.0) == floor(-1.14) == -2
 
 
 ### Template
