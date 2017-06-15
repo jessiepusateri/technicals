@@ -45,6 +45,25 @@
   >
   =>
   ```
+  
+### slicing
+
+```python
+a[start:end] # items start through end-1
+a[start:]    # items start through the rest of the array
+a[:end]      # items from the beginning through end-1
+a[:]         # a copy of the whole array
+```
+
+  ```python
+  > a = [1, 2, 3, 4, 5]
+  > b = a[:2]
+  > b
+  => [1, 2]
+  > c = a[3:]
+  > c
+  => [4, 5]
+  ```
 
 ## Tricks
 
