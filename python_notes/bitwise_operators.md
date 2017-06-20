@@ -2,6 +2,13 @@
 
 ## Built-In Functions
 
+
+### Complement
+```python
+~ x
+```
+Returns the complement of x - the number you get by switching each 1 for a 0 and each 0 for a 1. This is the same as -x - 1.
+
 ### Bit-Shift Left
 ```python
 x << y
@@ -28,11 +35,6 @@ x | y
 ```
 Does a "bitwise or". Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.
 
-### Complement
-```python
-~ x
-```
-Returns the complement of x - the number you get by switching each 1 for a 0 and each 0 for a 1. This is the same as -x - 1.
 
 ### Bitwise Exclusive OR
 ```python
