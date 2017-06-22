@@ -94,6 +94,22 @@ floor(8.0/7.0) == floor(1.14) == 1
 ```
 floor(8.0/7.0) == floor(-1.14) == -2
 
+### Strings and Tuples are Immutable
+
+Tuples
+```python
+>>> int_tuple = (4, 9)
+>>> int_tuple[0] = 1
+# raises: TypeError: 'tuple' object does not support item assignment
+```
+
+Strings
+```python
+>>> test_string = 'mutable?'
+>>> test_string[7] = '!'
+# TypeError: 'str' object does not support item assignment
+```
+
 
 ### Template
 
