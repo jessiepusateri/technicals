@@ -45,7 +45,8 @@
   >
   =>
   ```
-  
+### reversed()
+
 ### slicing
 
 ```python
@@ -121,6 +122,8 @@ Strings
 >>> test_string[7] = '!'
 # TypeError: 'str' object does not support item assignment
 ```
+
+### enumerate and reverse
 
 
 ### Template
