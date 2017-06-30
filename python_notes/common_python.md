@@ -54,16 +54,28 @@ a[start:]    # items start through the rest of the array
 a[:end]      # items from the beginning through end-1
 a[:]         # a copy of the whole array
 ```
+```python
+> a = [1, 2, 3, 4, 5]
+> b = a[:2]
+> b
+=> [1, 2]
+> c = a[3:]
+> c
+=> [4, 5]
+```
 
-  ```python
-  > a = [1, 2, 3, 4, 5]
-  > b = a[:2]
-  > b
-  => [1, 2]
-  > c = a[3:]
-  > c
-  => [4, 5]
-  ```
+### zip(*iterables)
+Make an iterator that aggregates elements from each of the iterables.
+
+Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables. The iterator stops when the shortest input iterable is exhausted. 
+
+```python
+>>> x = [1, 2, 3]
+>>> y = [4, 5, 6]
+>>> zipped = zip(x, y)
+>>> list(zipped)
+[(1, 4), (2, 5), (3, 6)]
+```
 
 ## Tricks
 
