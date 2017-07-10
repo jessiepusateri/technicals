@@ -13,7 +13,7 @@ graph = {'A': ['B', 'C'],
 ```
 
 ```python
-def dfs(graph, start):
+def bfs(graph, start):
     visited = set()
     frontier = [start]
     
@@ -28,7 +28,7 @@ def dfs(graph, start):
 ## Node
 
 ``` python
-def dfs(start):
+def bfs(start):
     visited = set()
     frontier = [start]
     
