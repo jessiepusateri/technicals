@@ -21,9 +21,21 @@ def dfs(graph, start):
         curr = frontier.pop()
         if curr not in visited:
             visited.add(curr)
-            for adj in graph[curr]:
+            for adj in graph[curr]: # get adjacent
                 frontier.insert(0, adj)
 ```
 
+## Node
 
-
+``` python
+def dfs(start):
+    visited = set()
+    frontier = [start]
+    
+    while frontier:
+        curr = frontier.pop()
+        if curr not in visited:
+            visited.add(curr)
+            for adj in curr.children: # get children
+                frontier.insert(0, adj)
+```
