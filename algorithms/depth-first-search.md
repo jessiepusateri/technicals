@@ -9,27 +9,6 @@ DFS is preferred if we want to visit every node in the graph.
 
 **Space**: Worst O(|V|)
 
-## Recursive (CTC)
-
-```python
-def search(root):
-  if root is None:
-    return
-  root.visited = true
-  for each node in root.adjacent:
-    if n.visited == false:
-      search(n)
-```
-
-## Recursive (Wiki)
-```python
-def DFS(G,v):
-      label v as discovered
-      for all edges from v to w in G.adjacentEdges(v) do
-          if vertex w is not labeled as discovered then
-              recursively call DFS(G,w)
-```
-
 ## Iterative (HackerEarth)
 ```python
 def DFS_iterative (G, s):                                   //Where G is graph and s is source vertex
@@ -40,19 +19,34 @@ def DFS_iterative (G, s):                                   //Where G is graph a
   while (S is not empty):
     v = S.pop( ) # pop a vertex from stack to visit next
     //Push all the neighbours of v in stack that are not visited   
-    for all neighbours w of v in Graph G:
+    for all_neighbors_w_of_v in Graph G:
       if w is not visited:
         S.push(w)
         visited.add(w) #mark w as visited
 ```
 
-# Recursive (HackerEarth)
+all_neighbors_w_of_v
+
+find neighbors
+
+## Recursive (HackerEarth)
 ```python
 visited = set()
 
 def DFS_recursive(G, s):
     visited.add(s) //mark s as visited
-        for all neighbours w of s in Graph G:
+        for all_neighbours_w_of_s in Graph G:
             if w is not visited:
-                DFS-recursive(G, w)
+                DFS_recursive(G, w)
 ```
+
+# Plain Language
+
+1. Pick a starting node and push all of its adjacent nodes into a stack.
+2. Pop a node from stack to select the node to visit.
+3. Push all its adjacent nodes into a stack.
+4. Repeat this process until the stack is empty.
+
+Note: Mark visited nodes in order to avoid infinite loops and visited the same node twice.
+
+# Use Cases
