@@ -29,4 +29,30 @@ def DFS(G,v):
           if vertex w is not labeled as discovered then
               recursively call DFS(G,w)
 ```
-              
+
+## Iterative (HackerEarth)
+```python
+def DFS_iterative (G, s):                                   //Where G is graph and s is source vertex
+  S = Stack()
+  S.push(s) # inserting s in stack 
+  visited = set()
+  visited.add(s) # mark s as visited
+  while (S is not empty):
+    v = S.pop( ) # pop a vertex from stack to visit next
+    //Push all the neighbours of v in stack that are not visited   
+    for all neighbours w of v in Graph G:
+      if w is not visited:
+        S.push(w)
+        visited.add(w) #mark w as visited
+```
+
+# Recursive (HackerEarth)
+```python
+visited = set()
+
+def DFS_recursive(G, s):
+    visited.add(s) //mark s as visited
+        for all neighbours w of s in Graph G:
+            if w is not visited:
+                DFS-recursive(G, w)
+```
