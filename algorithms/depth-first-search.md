@@ -36,7 +36,7 @@ def DFS_recursive(G, s):
                 DFS_recursive(G, neighbor)
 ```
 
-Different Variations of all_neighbors_of_v_in_graph_g:
+## Different Variations of all_neighbors_of_v_in_graph_g:
 
 ### 2D Matrix
 ```python
