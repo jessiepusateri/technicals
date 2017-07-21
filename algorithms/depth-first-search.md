@@ -41,9 +41,9 @@ Different Variations of all_neighbors_of_v_in_graph_g:
 
 ### 2D Matrix
 ```python
-def find_neighbors_w_of_v(2d_graph):
-  max_x = len(2d_graph) - 1
-  max_y = len(2d_graph[0]) - 1
+def find_neighbors_w_of_v(graph):
+  max_x = len(graph) - 1
+  max_y = len(graph[0]) - 1
   
   all_neighbors = []
   
