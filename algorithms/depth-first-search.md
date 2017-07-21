@@ -31,7 +31,7 @@ def DFS_iterative (G, s): # where G is graph and s is source vertex
 visited = set()
 
 def DFS_recursive(G, s):
-    visited.add(s) //mark s as visited
+    visited.add(s) # mark s as visited
         for neighbor in all_neighbours_of_v_in_graph_g*:
             if neighbor is not visited:
                 DFS_recursive(G, neighbor)
