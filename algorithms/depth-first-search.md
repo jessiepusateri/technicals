@@ -20,9 +20,9 @@ def DFS_iterative (G, s): # where G is graph and s is source vertex
     v = S.pop( ) # pop a vertex from stack to visit next
     # Push all the neighbours of v in stack that are not visited   
     for neighbor in all_neighbors_of_v_in_graph_g*:
-      if w is not visited:
+      if neighbor not in visited:
         S.push(w)
-        visited.add(w) #mark w as visited
+        visited.add(w) # mark w as visited
 ```
 
 
