@@ -19,15 +19,46 @@ def DFS_iterative (G, s):                                   //Where G is graph a
   while (S is not empty):
     v = S.pop( ) # pop a vertex from stack to visit next
     //Push all the neighbours of v in stack that are not visited   
-    for all_neighbors_w_of_v in Graph G:
+    for all_neighbors_w_of_v_in_graph_g*:
       if w is not visited:
         S.push(w)
         visited.add(w) #mark w as visited
 ```
 
-all_neighbors_w_of_v
+Different Variations of the neighbors_w_of_v_in_graph_g:
 
-find neighbors
+### 2D Matrix
+```python
+def find_neighbors_w_of_v(2d_graph):
+  max_x = len(2d_graph) - 1
+  max_y = len(2d_graph[0]) - 1
+  
+  all_neighbors = []
+  
+  directions = {{-1,-1,},{-1,0,},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}}
+  for i in len(directions):
+    adjacent_x = v.x + directions[i][0]
+    adjacent_y = v.y + directions[i][1]
+    if adjacent_x >= 0 and adjacent_x <= max_x:
+      if adjacent_y >= 0 and adjacent_y <= max_y:
+        all_neighbors.append([adjacent_x, adjacent_y])
+    
+```
+
+### Adjacency List
+```python
+graph[v]
+```
+
+### Binary Tree
+```python
+[v.left_child, v.right_child]
+```
+
+### Node
+```python
+v.children
+```
 
 ## Recursive (HackerEarth)
 ```python
