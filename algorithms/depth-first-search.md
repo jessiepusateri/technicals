@@ -12,24 +12,23 @@ DFS is preferred if we want to visit every node in the graph.
 ## Iterative (HackerEarth)
 ```python
 def DFS_iterative (G, s): # where G is graph and s is source vertex
-  S = Stack()
-  S.push(s) # inserting s in stack 
+  stack = []
+  stack.append(s) # inserting s in stack 
   visited = set()
   visited.add(s) # mark s as visited
-  while (S is not empty):
-    v = S.pop( ) # pop a vertex from stack to visit next
+  while stack:
+    v = stack.pop() # pop a vertex from stack to visit next
     # Push all the neighbours of v in stack that are not visited   
     for neighbor in all_neighbors_of_v_in_graph_g*:
       if neighbor not in visited:
-        S.push(w)
-        visited.add(w) # mark w as visited
+        stack.append(neighbor)
+        visited.add(neighbor) # mark neighbor as visited
 ```
 
 
 ## Recursive (HackerEarth)
 ```python
 visited = set()
-
 def DFS_recursive(G, s):
     visited.add(s) # mark s as visited
         for neighbor in all_neighbours_of_v_in_graph_g*:
@@ -47,7 +46,7 @@ def find_neighbors_w_of_v(graph):
   
   all_neighbors = []
   
-  directions = {{-1,-1,},{-1,0,},{-1,1},{0,-1},{0,1},{1,-1},{1,0},{1,1}}
+  directions = [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]]
   for i in len(directions):
     adjacent_x = v.x + directions[i][0]
     adjacent_y = v.y + directions[i][1]
