@@ -81,4 +81,16 @@ v.children
 
 Note: Mark visited nodes in order to avoid infinite loops and visited the same node twice.
 
-# Use Cases
+# Use Cases (Wikipedia)
+
+- Finding/Counting connected components.
+- Topological sorting.
+- Finding 2-(edge or vertex)-connected components.
+- Finding 3-(edge or vertex)-connected components.
+- Finding the bridges of a graph.
+- Generating words in order to plot the Limit Set of a Group.
+- Finding strongly connected components.
+- Planarity testing
+- Solving puzzles with only one solution, such as mazes. (DFS can be adapted to find all solutions to a maze by only including nodes on the current path in the visited set.)
+- Maze generation may use a randomized depth-first search.
+- Finding biconnectivity in graphs.
