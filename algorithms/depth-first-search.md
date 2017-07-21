@@ -11,21 +11,33 @@ DFS is preferred if we want to visit every node in the graph.
 
 ## Iterative (HackerEarth)
 ```python
-def DFS_iterative (G, s):                                   //Where G is graph and s is source vertex
+def DFS_iterative (G, s): # where G is graph and s is source vertex
   S = Stack()
   S.push(s) # inserting s in stack 
   visited = set()
   visited.add(s) # mark s as visited
   while (S is not empty):
     v = S.pop( ) # pop a vertex from stack to visit next
-    //Push all the neighbours of v in stack that are not visited   
-    for all_neighbors_w_of_v_in_graph_g*:
+    # Push all the neighbours of v in stack that are not visited   
+    for neighbor in all_neighbors_of_v_in_graph_g*:
       if w is not visited:
         S.push(w)
         visited.add(w) #mark w as visited
 ```
 
-Different Variations of the neighbors_w_of_v_in_graph_g:
+
+## Recursive (HackerEarth)
+```python
+visited = set()
+
+def DFS_recursive(G, s):
+    visited.add(s) //mark s as visited
+        for neighbor in all_neighbours_of_v_in_graph_g*:
+            if neighbor is not visited:
+                DFS_recursive(G, neighbor)
+```
+
+Different Variations of all_neighbors_of_v_in_graph_g:
 
 ### 2D Matrix
 ```python
@@ -60,16 +72,6 @@ graph[v]
 v.children
 ```
 
-## Recursive (HackerEarth)
-```python
-visited = set()
-
-def DFS_recursive(G, s):
-    visited.add(s) //mark s as visited
-        for all_neighbours_w_of_s in Graph G:
-            if w is not visited:
-                DFS_recursive(G, w)
-```
 
 # Plain Language
 
