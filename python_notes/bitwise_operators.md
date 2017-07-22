@@ -1,7 +1,29 @@
 # Bitwise Operators
 
-## Built-In Functions
+## Converting between Binary and Integer
 
+### Binary -> Integer
+
+```python
+int( bin_num, base=2)
+
+>>> int('0b101', base=2)
+5
+
+>>> int('101', base=2)
+5
+```
+
+### Integer to Binary
+```python
+bin(int_num)
+
+>>> bin(3)
+'0b11'
+
+```
+
+## Operators
 
 ### Complement
 ```python
