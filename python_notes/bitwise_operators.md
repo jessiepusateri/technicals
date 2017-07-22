@@ -36,7 +36,7 @@ x | y
 Does a "bitwise or". Each bit of the output is 0 if the corresponding bit of x AND of y is 0, otherwise it's 1.
 
 
-### Bitwise Exclusive OR
+### Bitwise Exclusive OR (XOR)
 ```python
 x ^ y
 ```
