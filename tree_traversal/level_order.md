@@ -1,12 +1,12 @@
 # Level-Order Traversal
 
-### Time Complexity
+#### Time Complexity
 
 - level_order + level_order_queue: O(n) 
 
     where n is the number of nodes
 
-### Space Complexity
+#### Space Complexity
 
 - level_order + level_order_queue: O(m) 
 
