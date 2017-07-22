@@ -1,5 +1,19 @@
 # Level-Order Traversal
 
+### Time Complexity
+
+- level_order + level_order_queue: O(n) 
+
+    where n is the number of nodes
+
+### Space Complexity
+
+- level_order + level_order_queue: O(m) 
+
+    where m is the largest number of nodes on a particular level. 
+    
+    (The queue and the prev_level array get cleared each time.)
+
 ## Method 1: Keon
 ```python
 def level_order(root):
