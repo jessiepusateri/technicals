@@ -5,6 +5,7 @@
 - Insert: O(lg(n))
 
 - Search: O(lg(n))
+          O(h) where h denotes the height of the tree.
 
 - Delete: O(lg(n))
 
@@ -25,7 +26,15 @@ class BST_Node:
 
 ### search
 ```python
-
+def search(root, k):
+  if root is None:
+    return None
+  if root.value == k:
+    return root
+  if k > root.value: # current value is smaller
+    return search(root.right, k)
+  if k < root.value: # current value is higher
+    return search(root.left, k)
 ```
 
 ### delete
