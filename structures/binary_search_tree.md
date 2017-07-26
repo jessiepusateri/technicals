@@ -2,6 +2,15 @@
 
 ### Time Complexity (Average)
 
+| Function      | Time Complexity   | Space Complexity |
+| ------------- |:-----------------:|:----------------:|
+| Insert        | O(h) - h is height|                  |
+| Search        |                   |                  |
+| Delete        |                   |                  |
+| Find-Min/Max  |                   |                  |
+| Find Successor|                   |                  |
+
+
 - Insert: O(lg(n))
 
 - Search: O(lg(n)) **OR** O(h) where h denotes the height of the tree.
