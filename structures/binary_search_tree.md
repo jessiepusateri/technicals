@@ -42,6 +42,11 @@ def search(root, k):
 
 ```
 
+### find-min/find-max
+```python
+def find_min(root):
+```
+
 ### traversal
 
 Sorted Order: In-order Traversal
