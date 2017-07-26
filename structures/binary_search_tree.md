@@ -48,9 +48,7 @@ class BSTree:
     if k < root.value: # current value is higher
       return search(root.left, k)
 
-  ### find-min/find-max
-  The maximum element is the same except that it is the rightmost descendent of the root.??
-
+  # the maximum element is the same except that it is the rightmost descendent of the root
   def find_min(root):
     if root is None:
       return None
