@@ -2,20 +2,16 @@
 
 ### Time Complexity (Average)
 
-| Function      | Time Complexity   | Space Complexity |
-| ------------- |:-----------------:|:----------------:|
-| Insert        | O(h) - h is height|                  |
-| Search        |                   |                  |
-| Delete        |                   |                  |
-| Find-Min/Max  |                   |                  |
-| Find Successor|                   |                  |
+| Function      | Time Complexity    | Space Complexity |
+| ------------- |:------------------:|:----------------:|
+| Insert        | O(h) - h* is height|                  |
+| Search        | O(h)               |                  |
+| Delete        |                    |                  |
+| Find-Min/Max  |                    |                  |
+| Find Successor|                    |                  |
 
+* h is log(n) when the tree is perfectly balanced.
 
-- Insert: O(lg(n))
-
-- Search: O(lg(n)) **OR** O(h) where h denotes the height of the tree.
-
-- Delete: O(lg(n))
 
 ### node
 ```python
@@ -85,6 +81,9 @@ class BSTree:
       return search(key, curr_node.left)
   
   def delete(self, root, k):
+    # case 1: zero children
+    # case 2: one child
+    # case 3: two children
     
   # the maximum element is the same except that it is the rightmost descendent of the root
   def find_min(self, root):
