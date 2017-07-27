@@ -10,7 +10,7 @@
 | Find-Min/Max  |                    |                  |
 | Find Successor|                    |                  |
 
-* h is log(n) when the tree is perfectly balanced.
+* h is log(n) when the tree is perfectly balanced. The height of a binary search tree can range from lgn to n depending on the order of insertion. On average, the height is log(n).
 
 
 ### node
