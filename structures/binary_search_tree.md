@@ -94,6 +94,8 @@ class BSTree:
     while min.left is not None:
       min = min.left
     return min
+  
+  def find_successor(self, node):
 ```
 
 ### traversal
