@@ -65,14 +65,24 @@ class BSTree:
         curr_node.right = BST_Node(key,val,parent=curr_node)
 
   def search(self, root, k):
-    if root is None:
+    if self.root:
+      res = self._get(key, self.root)
+      if res:
+        return res.value
+      else:
+        return None
+    else:
       return None
-    if root.key == k:
-      return root
-    if k > root.key: # current value is smaller
-      return search(root.right, k)
+  
+  def _search(self, key, curr_node):
+    if curr_node is None:
+      return None
+    if curr_node.key == key:
+      return curr_node
+    if k > curr_node.key: # current value is smaller
+      return search(key, curr_node.right)
     if k < root.key: # current value is higher
-      return search(root.left, k)
+      return search(key, curr_node.left)
   
   def delete(self, root, k):
     
