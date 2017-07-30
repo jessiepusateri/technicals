@@ -2,10 +2,17 @@
 
 ### Time Complexity
 
-- insert
-- lookup
-- remove
-- space
+| Function      | Time Complexity        | Space Complexity |
+| ------------- |:----------------------:|:----------------:|
+| Insert        | O(w) - w = len(word)   | O(1)             |
+| Search        | O(w)                   | O(1)             |
+| Delete        |                        |                  |
+| Starts With   | O(p) - p = len(prefix) | O(1)             |
+| Words         |                        |                  |
+| Is Empty      |                        |                  |
+| Count         |                        |                  |
+
+- delete (deletes a word)
 - count (returns a count of the keys)
 - words (returns a list of the words in the tree)
 - is_empty (returns whether the trie is empty)
@@ -14,7 +21,7 @@
 
 
 
-## Reference Method
+## Reference Method (Children referenced by dictionary)
 
 ```python
 class TrieNode:
