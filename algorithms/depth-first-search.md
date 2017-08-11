@@ -5,6 +5,8 @@ to the next branch. That is, we go deep before we go wide.
 
 DFS is preferred if we want to visit every node in the graph.
 
+Marking visited nodes in not required in graphs without cycles (ex. trees)!
+
 **Time Complexity**: Worst O(|V| + |E|)
 
 **Space**: Worst O(|V|)
